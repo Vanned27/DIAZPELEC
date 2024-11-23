@@ -173,7 +173,7 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
-/* Responsive styles */
+
 @media (max-width: 600px) {
     .container {
         padding: 15px;
