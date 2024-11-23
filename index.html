@@ -1,1 +1,134 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Enrollment Form</h1>
+        
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+        
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="16" max="99" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Sex:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="sex" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">Select a course</option>
+                    <option value="BSIT">BSIT - Bachelor of Science in Information Technology</option>
+                    <option value="BSSW">BSSW - Bachelor of Science in Social Work</option>
+                    <option value="BSPA">BSPA - Bachelor of Science in Public Administration</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Interests:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="webdev" name="interests" value="webdev">
+                    <label for="webdev">Web Development</label>
+                    <input type="checkbox" id="datascience" name="interests" value="datascience">
+                    <label for="datascience">Data Science</label>
+                    <input type="checkbox" id="networking" name="interests" value="networking">
+                    <label for="networking">Networking</label>
+                    <input type="checkbox" id="graphics" name="interests" value="graphics">
+                    <label for="graphics">Graphic Design</label>
+                </div>
+            </div>
+            
+            <button type="submit">Enroll Now</button>
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                    <th>Interests</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Jovani Diaz</td>
+                    <td>jovani.diaz@email.com</td>
+                    <td>20</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Web Development, Data Science</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Sarah Geronima</td>
+                    <td>sarah.G@email.com</td>
+                    <td>47</td>
+                    <td>Female</td>
+                    <td>BSSW</td>
+                    <td>Networking</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Zoro Warudo</td>
+                    <td>Zoro.boke@email.com</td>
+                    <td>21</td>
+                    <td>Male</td>
+                    <td>BSPA</td>
+                    <td>Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Luffy Diaz</td>
+                    <td>L.dias@email.com</td>
+                    <td>20</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Web Development, Networking</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Mr.DUCK</td>
+                    <td>ronjaruk@email.com</td>
+                    <td>22</td>
+                    <td>Male</td>
+                    <td>BSSW</td>
+                    <td>Data Science</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
